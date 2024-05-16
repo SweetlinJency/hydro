@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .industries-banner-container {
+            width: 90%;
+            margin: auto;
+        }
+
+        .industries-banner-row {
+            display: flex;
+        }
+
+        .industries-banner-col {
+            width: 100%;
+        }
+
+        .industries-h2 {
+            padding-top: 30px;
+            font-size: 35px;
+            position: relative;
+        }
+
+        .industries-h2::before {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 5px;
+            background-color: #021b35;
+            bottom: 0px;
+        }
+
+        .industries-p {
+            font-size: 18px;
+            padding: 13px 0px;
+        }
+
+        .industries-content-container {
+            width: 90%;
+            margin: auto;
+        }
+
+        .industries-content-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            border-bottom: 3px solid #021b35;
+        }
+
+        .content-col1 {
+            width: 30.3%;
+        }
+
+        .content-h3 {
+            text-align: center;
+            font-size: 20px;
+            padding: 17px 0px;
+        }
+
+        .steel-container {
+            width: 90%;
+            margin: auto;
+        }
+
+        .steel-row {
+            display: flex;
+            border-bottom: 3px solid #021b35;
+        }
+
+        .steel-col {
+            width: 30.3%;
+            padding-bottom: 20px;
+        }
+
+        .steel-h3 {
+            font-size: 30px;
+            padding: 20px 0px;
+            font-weight: 300;
+        }
+
+        @media (min-width:320px) {
+            .industries-banner-container {
+                width: 90%;
+            }
+
+            .industries-banner-row {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .industries-banner-col {
+                width: 100%;
+            }
+
+            .industries-content-container {
+                width: 90%;
+                margin: auto;
+            }
+
+            .industries-content-row {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .content-col1 {
+                width: 100%;
+            }
+
+            .steel-container {
+                width: 90%;
+                margin: auto;
+            }
+
+            .steel-row {
+                display: flex;
+            }
+
+            .steel-col {
+                width: 100%;
+            }
+        }
+        @media (min-width:760px) {
+            .industries-banner-container {
+                width: 90%;
+            }
+
+            .industries-banner-row {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .industries-banner-col {
+                width: 100%;
+            }
+
+            .industries-content-container {
+                width: 90%;
+                margin: auto;
+            }
+
+            .industries-content-row {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .content-col1 {
+                width: 30.30%;
+            }
+
+            .steel-container {
+                width: 90%;
+                margin: auto;
+            }
+
+            .steel-row {
+                display: flex;
+            }
+
+            .steel-col {
+                width: 30.3%;
+            }
+        }
+
+        @media (min-width:1020px) {
+            .industries-banner-container {
+                width: 90%;
+            }
+
+            .industries-banner-row {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .industries-banner-col {
+                width: 100%;
+            }
+
+            .industries-content-container {
+                width: 90%;
+                margin: auto;
+            }
+
+            .industries-content-row {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .content-col1 {
+                width: 30.30%;
+            }
+
+            .steel-container {
+                width: 90%;
+                margin: auto;
+            }
+
+            .steel-row {
+                display: flex;
+            }
+
+            .steel-col {
+                width: 30.3%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="index.html"><img src="images/logo1-removebg-preview.png"></a></div>
+            <input type="radio" name="slider" id="menu-btn">
+            <input type="radio" name="slider" id="close-btn">
+            <ul class="nav-links">
+                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="about.html" class="desktop-item">Company</a>
+                    <input type="checkbox" id="showMega">
+                    <label for="showMega" class="mobile-item">Company</label>
+                    <div class="mega-box">
+                        <div class="content">
+                            <div class="row">
+                                <img src="https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg"
+                                    alt="">
+                            </div>
+                            <div class="row">
+                                <header>Who we are</header>
+                                <ul class="mega-links">
+                                    <li><a href="strategy.html">Strategy & Purpose</a></li>
+                                    <li><a href="#">Officers</a></li>
+                                    <li><a href="history.html">History</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header></header>
+                                <ul class="mega-links">
+                                    <li><a href="products.html">Brands</a></li>
+                                    <li><a href="#">Code of Conduct</a></li>
+                                    <li><a href="locations.html">Global Locations</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>Building Better</header>
+                                <ul class="mega-links">
+                                    <li><a href="#">Sustainability</a></li>
+                                    <li><a href="#">Innovation</a></li>
+                                    <li><a href="#">Foundation</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="products.html" class="desktop-item">Products</a>
+                    <input type="checkbox" id="showMega">
+                    <label for="showMega" class="mobile-item">Products</label>
+                    <div class="mega-box">
+                        <div class="content">
+                            <div class="row">
+                                <img src="https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg"
+                                    alt="">
+                            </div>
+                            <div class="row">
+                                <!-- <header>Design Services</header> -->
+                                <ul class="mega-links">
+                                    <li><a href="procut1.html">Hydraulic Pumps</a></li>
+                                    <li><a href="procut2.html">Valves</a></li>
+                                    <li><a href="procut3.html">Power Packs</a></li>
+                                    <li><a href="procut4.html">Fittings</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <!-- <header>Email Services</header> -->
+                                <ul class="mega-links">
+                                    <li><a href="procut5.html">Intersial valves</a></li>
+                                    <li><a href="procut6.html">Control Works</a></li>
+                                    <li><a href="procut7.html">Activation</a></li>
+                                    <li><a href="procut8.html">Directional control</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <!-- <header>Security services</header> -->
+                                <ul class="mega-links">
+                                    <li><a href="#">Throttle valve</a></li>
+                                    <li><a href="#">PVR1T Variable</a></li>
+                                    <li><a href="#">HPV43 Double</a></li>
+                                    <li><a href="#">Cartridge Valve</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="industries.html" class="desktop-item">Industries</a>
+                    <input type="checkbox" id="showDrop">
+                    <label for="showDrop" class="mobile-item">Industries</label>
+                    <ul class="drop-menu">
+                        <li><a href="industries.html">Power</a></li>
+                        <li><a href="industries.html">Steel</a></li>
+                        <li><a href="industries.html">Plastic</a></li>
+                        <li><a href="industries.html">Construction</a></li>
+                        <li><a href="industries.html">Mechine Tools</a></li>
+                        <li><a href="industries.html">Marine</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+                <li>
+                    <div class="search-box">
+                        <input type="text" class="search-txt" placeholder="Type Here To Search...">
+                        <a href="#" class="search-btn">
+                            <i class="fa fa-search" aria-hidden="true"></i> </a>
+                    </div>
+                </li>
+            </ul>
+            <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+
+    </nav>
+    <section class="industries-banner">
+        <div class="industries-banner-container">
+            <img src="images/industries.jpg" alt="" width="100%">
+            <div class="industries-banner-row">
+                <div class="industries-banner-col">
+                    <h2 class="industries-h2">Industries</h2>
+                    <p class="industries-p">Hydro TORK Limited believes in providing most suitable and cost effective
+                        solutions for all the
+                        hydraulic applications. We have most experienced application engineering team of 40 engineers
+                        working relentlessly on reducing cost and improving the performance of hydraulics in various
+                        applications.
+                    </p>
+                    <p class="industries-p">We have more than five decades of experience in handling applications like
+                        Hydro Electric Power
+                        Generation, Thermal Power, Wind, Solar, Steel Mills, Machine Tools, Plastics, Marine, and Heavy
+                        Engineering and so on.
+                    </p>
+                    <p class="industries-p">Our solutions are from concept to commissioning stage, depend on us, we will
+                        delight you with our
+                        excellent attention, service & support.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="industries-content">
+        <div class="industries-content-container">
+            <h3 class="steel-h3">Power</h3>
+            <div class="industries-content-row">
+                <div class="content-col1">
+                    <div class="content-img">
+                        <h3 class="content-h3">Hydro Electric Power </h3>
+                        <img src="images/powe-1.jpg" alt="" width="100%" height="70%">
+                    </div>
+                </div>
+                <div class="content-col1">
+                    <h3 class="content-h3">Wind Powe</h3>
+                    <img src="images/power-2.jpg" alt="" width="100%">
+                </div>
+                <div class="content-col1"></div>
+                <div class="content-col1">
+                    <h3 class="content-h3">Thermal Power</h3>
+                    <img src="images/power-3.jpg" alt="" width="100%" height="70%">
+                </div>
+                <div class="content-col1">
+                    <h3 class="content-h3">Solar Power</h3>
+                    <img src="images/power-4.jpg" alt="" width="100%" height="70%">
+                </div>
+                <div class="content-col1"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="steel">
+        <div class="steel-container">
+            <h3 class="steel-h3">Steel</h3>
+            <div class="steel-row">
+                <div class="steel-col">
+                    <img src="images/steel.jpg" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="steel">
+        <div class="steel-container">
+            <h3 class="steel-h3">Plastics</h3>
+            <div class="steel-row">
+                <div class="steel-col">
+                    <img src="images/plastic-1.jpg" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="steel">
+        <div class="steel-container">
+            <h3 class="steel-h3">Construction</h3>
+            <div class="steel-row">
+                <div class="steel-col">
+                    <img src="images/construction.jpg" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="steel">
+        <div class="steel-container">
+            <h3 class="steel-h3">Machine Tools</h3>
+            <div class="steel-row">
+                <div class="steel-col">
+                    <img src="images/machine tools-1.jpg" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="steel">
+        <div class="steel-container">
+            <h3 class="steel-h3">Marine</h3>
+            <div class="steel-row">
+                <div class="steel-col">
+                    <img src="images/Marine-1.jpeg" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
